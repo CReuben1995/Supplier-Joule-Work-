@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 240 6% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 6% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 6% 10%;
+
+    /* Brand: Joule purple */
+    --primary: 250 76% 57%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 250 100% 97%;
+
+    --link: 217 91% 55%;
+
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 6% 10%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 250 76% 57%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 158 64% 40%;
+    --warning: 35 92% 50%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 250 76% 57%;
+
+    --radius: 0.75rem;
+
+    /* SAP Business Network */
+    --sbn-primary: 214 100% 32%;
+    --sbn-primary-foreground: 0 0% 100%;
+    --sbn-link: 214 100% 40%;
+    --sbn-surface: 220 14% 96%;
+
+    /* Copilot dark panel */
+    --copilot-bg: 240 6% 10%;
+    --copilot-foreground: 0 0% 100%;
+    --copilot-muted: 240 5% 55%;
+    --copilot-border: 0 0% 100% / 0.1;
+    --copilot-signal: 158 64% 52%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
